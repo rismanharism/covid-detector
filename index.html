@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,49 +12,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <title>COVID DETECTOR</title>
 </head>
+
 <body>
     <div class="container">
         <ul class="nav">
             <li>
-                <p id ="judul">COVID DETECTOR</p>
+                <p id="judul">COVID DETECTOR</p>
             </li>
         </ul>
-    <div class="home" id="landingPage">
-        <img src="icon1.png">
-        <p>Masukan Nama Anda</p>
-        <input type="text" id="name" class="search-input" placeholder="Input Your Name"><br>
-        <input type="button" value="Submit" id="submitName" class = "submit-btn">
-    </div>
-
-    <div class="home"  id="secondPage" style="display: none">
-        <p id="greeting">hello, name</p>
-        <p id="message" style="text-align: center;">Selamat datang di web covid detector silahkan masukan keluhan anda</p>
-        <p>contoh gejala : 
-            tenggorokan gatal, nyeri punggung, hidung pilek atau tersumbat, sakit kepala, bersin berlebih, banyak berkeringat di malam hari, badan pegal, anosmia, batuk kering, suara serak, nyeri otot</p>
-        <div>
-            <input class="search-input" type="text" id="gejala" placeholder="Keluhan"><br>
-            <input class="submit-btn" type="button" name="" value ="Submit" id="submitGejala">
+        <div class="home" id="landingPage">
+            <img src="icon1.png">
+            <p>Masukan Nama Anda</p>
+            <input type="text" id="name" class="search-input" placeholder="Input Your Name"><br>
+            <input type="button" value="Submit" id="submitName" class="submit-btn">
         </div>
-        <div id="result" style="margin-top: 10px; display: none;">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nama</th>
-                        <th>Persentase</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody">
-                    <!-- <tr>
+
+        <div class="home" id="secondPage" style="display: none">
+            <p id="greeting">hello, name</p>
+            <p id="message" style="text-align: center;">Selamat datang di web covid detector silahkan masukan keluhan
+                anda</p>
+            <p>contoh gejala : tenggorokan gatal, nyeri punggung, hidung pilek atau tersumbat, sakit kepala, bersin
+                berlebih, banyak berkeringat di malam hari, badan pegal, anosmia, batuk kering, suara serak, nyeri otot ...
+            </p>
+            <div>
+                <input class="search-input" type="text" id="gejala" placeholder="Keluhan"><br>
+                <input class="submit-btn" type="button" name="" value="Submit" id="submitGejala">
+            </div>
+            <div id="result" style="margin-top: 10px; display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Persentase</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr>
                         <td>Nama</td>
                         <td>0</td>
                         <td><input class="delete-btn" type="button" value ="Delete" id="delete"></td>
                     </tr> -->
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
